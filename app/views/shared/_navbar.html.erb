@@ -1,0 +1,25 @@
+<div class="content">
+  <div class="topnav">
+    <div class="container-fluid">
+      <nav  class="navbar navbar-dark navbar-expand-lg topnav-menu">
+        <div class="collapse navbar-collapse active" id="topnav-menu-content">
+          <div class="brand-logo">OC Ski Club</div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <%= link_to "Home", root_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Our Trips", "#trips", class: "nav-link" %>
+            </li>
+            <li class="nav-item">
+              <%= link_to "Members", new_user_session_path, class: "nav-link" %>
+            </li>
+            <li class="nav-item active">
+              <%= link_to "Holla at Us", "#contact", class: "nav-link" %>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

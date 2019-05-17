@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ski_resort: MyString
+  resort_city: MyString
+  resort_state: MyString
+  cost: 9.99
+  gross_earned: 9.99
+  net_earned: 9.99
+  req_count: 1
+  actual_count: 1
+  trip_date: 2019-02-11 08:48:10
+  trip_distance: MyString
+  trip_days: 1
+  resort_rating: 9.99
+
+two:
+  ski_resort: MyString
+  resort_city: MyString
+  resort_state: MyString
+  cost: 9.99
+  gross_earned: 9.99
+  net_earned: 9.99
+  req_count: 1
+  actual_count: 1
+  trip_date: 2019-02-11 08:48:10
+  trip_distance: MyString
+  trip_days: 1
+  resort_rating: 9.99

@@ -1,0 +1,20 @@
+{
+  "name": "OhioCitySkiClub-Rails",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.7.0",
+    "aos": "^2.3.4",
+    "argon": "^1.0.0",
+    "bower": "^1.8.8",
+    "isotope-layout": "^3.0.6",
+    "jquery.easing": "^1.4.1",
+    "pickadate": "^5.0.0-alpha.2",
+    "picker": "^0.1.4",
+    "popper": "^1.0.1",
+    "requirejs": "^2.3.6",
+    "scrollspy": "^1.6.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.12.7"
+  }
+}

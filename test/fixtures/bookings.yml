@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  title: MyString
+  cost: 1
+  start: 2019-02-11 20:06:11
+  cancelation_reason: MyText
+  refunded: false
+  trip_id: 1
+  client_id: 1
+
+two:
+  status: MyString
+  title: MyString
+  cost: 1
+  start: 2019-02-11 20:06:11
+  cancelation_reason: MyText
+  refunded: false
+  trip_id: 1
+  client_id: 1

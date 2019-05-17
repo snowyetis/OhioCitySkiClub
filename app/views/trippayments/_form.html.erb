@@ -1,0 +1,52 @@
+<%= form_with(model: trippayment, local: true) do |form| %>
+  <% if trippayment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trippayment.errors.count, "error") %> prohibited this trippayment from being saved:</h2>
+
+      <ul>
+      <% trippayment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :payment_number %>
+    <%= form.text_field :payment_number, id: :trippayment_payment_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :trippayment_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :trippayment_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.number_field :cost, id: :trippayment_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :service %>
+    <%= form.text_field :service, id: :trippayment_service %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_id %>
+    <%= form.number_field :trip_id, id: :trippayment_trip_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :client_id %>
+    <%= form.number_field :client_id, id: :trippayment_client_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

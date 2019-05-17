@@ -1,0 +1,89 @@
+<section class="home-bg home-clip section h-100vh" id="home">
+  <div class="bg-overlay"></div>
+  <div class="home-table">
+    <div class="home-table-center">
+      <div class="container">
+        <div class="row justify-content-center aos-init aos-animate" data-aos="fade-up">
+          <div class="col-lg-12">
+            <%= image_tag "OCSC_Splash_BoldPenAsset-PNG.png", class: "img-responsive" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section bg-light" id="services">
+  <div class="container">
+    <div class="row aos-init aos-animate" data-aos="fade-up">
+      <div class="col-lg-12">
+        <div class="section_title text-center">
+          <h1>What we are About</h1>
+        </div>
+        <ul class="mb-0 list-inline text-center skill_home mt-5">
+          <li class="list-inline-item mr-0">Say No to Seasonal Depression</li>
+          <li class="list-inline-item mr-0">Caring for the Environment</li>
+          <li class="list-inline-item mr-0">All Skill Levels Welcomed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-3 aos-init aos-animate" data-aos="fade-up">
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="services_boxes bg-white mt-3 rounded p-4">
+          <div class="services_icon text-custom">
+            <h2>No Commitment</h2>
+          </div>
+          <div class="services_content mt-3">
+            <%= image_tag "ThumbUpIconCircleAsset-PNG" %>
+          </div>
+          <div class="read_more">
+            While we are a club, we do not require any fees. We are a not for profit organization.
+            You will only pay for the trips you go on.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="services_boxes bg-white mt-3 rounded p-4">
+          <div class="services_icon text-custom">
+            <h2>Mo Resorts!</h2>
+          </div>
+          <div class="services_content mt-3">
+            <%= image_tag "GondoloaIconCircleAsset-PNG" %>
+          </div>
+          <div class="read_more">
+            One huge bonus of a ski club is getting to go to new resorts and/or resorts farther than you
+            want to drive.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="services_boxes bg-white mt-3 rounded p-4">
+          <div class="services_icon text-custom">
+            <h2>We Drive</h2>
+          </div>
+          <div class="services_content mt-3">
+            <%= image_tag "BusIconCircleAsset-PNG" %>
+          </div>
+          <div class="read_more">
+            Transportation is included in the fee along with a driver. Kick back and relax like a BAWSE!
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-4">
+        <div class="services_boxes bg-white mt-3 rounded p-4">
+          <div class="services_icon text-custom">
+            <h2>Adults Only</h2>
+          </div>
+          <div class="services_content mt-3">
+            <%= image_tag "RedRedWineIconCircleAsset-PNG", class: "img-responsive" %>
+          </div>
+          <div class="read_more">
+            We love kids! (not in a creepy way) But, we fit'n to get crunk sucka. So please, adults only. Thaaaanks!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="trips">
+    <%= render "trips/shared/trip_face_case" %>
+</section>

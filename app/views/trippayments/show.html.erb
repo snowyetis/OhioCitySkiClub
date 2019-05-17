@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Payment number:</strong>
+  <%= @trippayment.payment_number %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @trippayment.status %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @trippayment.date %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @trippayment.cost %>
+</p>
+
+<p>
+  <strong>Service:</strong>
+  <%= @trippayment.service %>
+</p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @trippayment.trip_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @trippayment.client_id %>
+</p>
+
+<%= link_to 'Edit', edit_trippayment_path(@trippayment) %> |
+<%= link_to 'Back', trippayments_path %>

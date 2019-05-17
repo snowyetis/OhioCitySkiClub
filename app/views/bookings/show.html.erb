@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @booking.status %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @booking.title %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @booking.cost %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @booking.start %>
+</p>
+
+<p>
+  <strong>Cancelation reason:</strong>
+  <%= @booking.cancelation_reason %>
+</p>
+
+<p>
+  <strong>Refunded:</strong>
+  <%= @booking.refunded %>
+</p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @booking.trip_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @booking.client_id %>
+</p>
+
+<%= link_to 'Edit', edit_booking_path(@booking) %> |
+<%= link_to 'Back', bookings_path %>

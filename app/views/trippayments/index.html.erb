@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Trippayments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Payment number</th>
+      <th>Status</th>
+      <th>Date</th>
+      <th>Cost</th>
+      <th>Service</th>
+      <th>Trip</th>
+      <th>Client</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @trippayments.each do |trippayment| %>
+      <tr>
+        <td><%= trippayment.payment_number %></td>
+        <td><%= trippayment.status %></td>
+        <td><%= trippayment.date %></td>
+        <td><%= trippayment.cost %></td>
+        <td><%= trippayment.service %></td>
+        <td><%= trippayment.trip_id %></td>
+        <td><%= trippayment.client_id %></td>
+        <td><%= link_to 'Show', trippayment %></td>
+        <td><%= link_to 'Edit', edit_trippayment_path(trippayment) %></td>
+        <td><%= link_to 'Destroy', trippayment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Trippayment', new_trippayment_path %>

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ski resort:</strong>
+  <%= @trip.ski_resort %>
+</p>
+
+<p>
+  <strong>Resort city:</strong>
+  <%= @trip.resort_city %>
+</p>
+
+<p>
+  <strong>Resort state:</strong>
+  <%= @trip.resort_state %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @trip.cost %>
+</p>
+
+<p>
+  <strong>Gross earned:</strong>
+  <%= @trip.gross_earned %>
+</p>
+
+<p>
+  <strong>Net earned:</strong>
+  <%= @trip.net_earned %>
+</p>
+
+<p>
+  <strong>Req count:</strong>
+  <%= @trip.req_count %>
+</p>
+
+<p>
+  <strong>Actual count:</strong>
+  <%= @trip.actual_count %>
+</p>
+
+<p>
+  <strong>Trip date:</strong>
+  <%= @trip.trip_date %>
+</p>
+
+<p>
+  <strong>Trip distance:</strong>
+  <%= @trip.trip_distance %>
+</p>
+
+<p>
+  <strong>Trip days:</strong>
+  <%= @trip.trip_days %>
+</p>
+
+<p>
+  <strong>Resort rating:</strong>
+  <%= @trip.resort_rating %>
+</p>
+
+<%= link_to 'Edit', edit_trip_path(@trip) %> |
+<%= link_to 'Back', trips_path %>

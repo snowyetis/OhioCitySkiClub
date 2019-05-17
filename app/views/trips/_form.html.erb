@@ -1,0 +1,77 @@
+<%= form_with(model: trip, local: true) do |form| %>
+  <% if trip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trip.errors.count, "error") %> prohibited this trip from being saved:</h2>
+
+      <ul>
+      <% trip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ski_resort %>
+    <%= form.text_field :ski_resort, id: :trip_ski_resort %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resort_city %>
+    <%= form.text_field :resort_city, id: :trip_resort_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resort_state %>
+    <%= form.text_field :resort_state, id: :trip_resort_state %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost, id: :trip_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gross_earned %>
+    <%= form.text_field :gross_earned, id: :trip_gross_earned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :net_earned %>
+    <%= form.text_field :net_earned, id: :trip_net_earned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :req_count %>
+    <%= form.number_field :req_count, id: :trip_req_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :actual_count %>
+    <%= form.number_field :actual_count, id: :trip_actual_count %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_date %>
+    <%= form.datetime_select :trip_date, id: :trip_trip_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_distance %>
+    <%= form.text_field :trip_distance, id: :trip_trip_distance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :trip_days %>
+    <%= form.number_field :trip_days, id: :trip_trip_days %>
+  </div>
+
+  <div class="field">
+    <%= form.label :resort_rating %>
+    <%= form.text_field :resort_rating, id: :trip_resort_rating %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
